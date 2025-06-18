@@ -5,7 +5,7 @@ const withNextra = nextra({
 })
 
 // Use basePath for GitHub Pages deployment
-const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true'
 const basePath = isGitHubPages ? '/nextra-test' : ''
 
 export default withNextra({
